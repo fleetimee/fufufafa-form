@@ -1,6 +1,6 @@
 "use client";
 
-// import { zodResolver } from "@hookform/resolvers/zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 import { Button } from "@/components/ui/button";
@@ -34,7 +34,7 @@ export function AddMemberForm() {
   );
 
   const form = useForm<z.infer<typeof AddMemberFormSchema>>({
-    // resolver: zodResolver(AddMemberFormSchema),
+    resolver: zodResolver(AddMemberFormSchema),
     defaultValues: {
       nama: "",
       email: "",
