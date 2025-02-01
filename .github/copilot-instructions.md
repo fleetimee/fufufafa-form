@@ -18,6 +18,8 @@ For data fetching, use React Query to manage asynchronous queries, and directly 
 
 Implement parallel pre-rendering using Suspense boundaries to break up the rendering work. When data from an API is loading, display a skeleton loader for that component while streaming the rest of the UI immediately. Additionally, use Suspense Boundaries to progressively stream UI so that parts of the result are shown as soon as they are ready (refer to Next.js documentation on loading UI and streaming).
 
+Maintain components by ensuring they are modular, well-documented, and adhere to separation of concerns. Refactor regularly to remove redundant code and improve clarity, and apply unit tests to guarantee stability over time.
+
 Implement robust error-handling strategies, including logging practices and user notifications, to maintain application stability.
 
 Incorporate performance optimization techniques such as lazy loading components and memoization strategies to enhance efficiency.
